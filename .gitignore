@@ -1,4 +1,5 @@
 # Default ignored files
 /workspace.xml
+saved_obj/*.obj
 .idea
 venv
