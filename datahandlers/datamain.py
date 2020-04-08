@@ -25,14 +25,16 @@ def copy_data_to_obj(root_path):
             with open(temp_list_path, "rb") as all_data_file:
                 all_data.all_user_data.append( pickle.load(all_data_file))
 
+    file_list = os.listdir(data_path)
+    all_data.file_list = file_list
     if len(all_data.all_user_data) == 54:
         print("Reading object from file system Done")
+        # endpoint_date_print(all_data.all_user_data)
         return
 
-    file_list = os.listdir(data_path)
+
 
     with fut.ProcessPoolExecutor() as executor:
-        args = ((file_item, data_path) for (file_item) in file_list)
         results = executor.map(excel_operation, file_list)
 
         for res in results:
@@ -60,41 +62,54 @@ def excel_operation(file_item):
 
     excel_file = pd.open_workbook(data_path + file_item)
     excel_sheet = excel_file.sheet_by_index(0)
+
+    data = [excel_sheet.row_values(i) for i in range(excel_sheet.nrows)]
+    labels = data[0]
+    data = data[1:]
+    data.sort(key=lambda x: x[5])
+    excel_file.release_resources()
+
     list_data = []
     monday_found = False
-    skip_flag = False
-    no_rows = excel_sheet.nrows
+    # skip_flag = False
+    special_flag = False
+    no_rows = len(data)
     start_date = 0
-    diff = datetime.fromtimestamp(excel_sheet.cell_value(no_rows - 1, 0)) - datetime.fromtimestamp(excel_sheet.cell_value(1, 0))
+    diff = datetime.fromtimestamp(data[no_rows - 1][5] / 1000) - datetime.fromtimestamp(data[0][5] / 1000)
+    beginning = True
+    if file_item == "ajdqnf.xlsx":
+        special_flag = True
 
     for index in range(no_rows):
-        if index != 0 and excel_sheet.cell_value(index, 9) != 0:
-            temp_info = UserInfo(excel_sheet.row_values(index))
-            if start_date != 0 and (temp_info.rfp - start_date).days >= 14:
+        if index != 0 and data[index][9] != 0:
+            temp_info = UserInfo(data[index])
+            if start_date != 0 and (temp_info.rfp.date() - start_date.date()).days >= 14:
                 break
 
             if diff.days <= 14 and check_date_range(temp_info.rfp):
                 list_data.append(temp_info)
             else:
-                if index == 1 and temp_info.rfp.weekday() >= 5:
+                if beginning and temp_info.rfp.weekday() >= 5 or special_flag:
                     monday_found = True
                 if diff.days >= 19 - temp_info.rfp.weekday():
-                    if index == 1 and temp_info.rfp.weekday() == 0 and 8 <= temp_info.rfp.hour < 17 and monday_found is False:
-                        skip_flag = True
-                    if skip_flag and index > 1 and temp_info.rfp.weekday() > 0:
-                        skip_flag = False
-                    if not skip_flag:
-                        if monday_found is False and temp_info.rfp.weekday() == 0:
-                            monday_found = True
-                        if check_date_range(temp_info.rfp) and monday_found:
-                            if start_date == 0:
-                                start_date = temp_info.rfp
-                            list_data.append(temp_info)
+                    # if beginning and temp_info.rfp.weekday() == 0 and 8 <= temp_info.rfp.hour < 17 and monday_found is False:
+                    #    skip_flag = True
+                    # if skip_flag and not beginning and temp_info.rfp.weekday() > 0:
+                    # skip_flag = False
+                    # if not skip_flag:
+                    if monday_found is False and temp_info.rfp.weekday() == 0:
+                        monday_found = True
+                    if check_date_range(temp_info.rfp) and monday_found:
+                        if start_date == 0:
+                            start_date = temp_info.rfp
+                        list_data.append(temp_info)
                 else:
                     if check_date_range(temp_info.rfp):
                         list_data.append(temp_info)
+            if beginning:
+                beginning = False
 
-    excel_file.release_resources()
+
     if len(list_data) == 0:
         print(file_item + " is empty")
         return file_item
@@ -116,6 +131,6 @@ def endpoint_date_print(obj_list):
         length = len(item)
         count += 1
         if length > 0:
-            print("User " + str(count) + " -----> Start date : " + str(item[0].rfp) + " and End date : " + str(item[length - 1].rfp))
+            print("User " + str(count) + " -----> Start date : " + str(item[0].rfp) + " and End date : " + str(item[length - 1].rfp) + " TZ:"+ str(item[0].rfp.tzinfo))
         else:
             print("User " + str(count) + " is empty")

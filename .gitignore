@@ -3,3 +3,4 @@
 saved_obj/*.obj
 .idea
 venv
+__pycache__
