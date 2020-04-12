@@ -1,5 +1,6 @@
 class UserData:
-    all_user_data = []
-    is_splitted = False
-    list_split_data = []
-    file_list = []
+    def __init__(self):
+        self.all_user_data = []
+        self.is_splitted = False
+        self.list_split_data = []
+        self.file_list = []
