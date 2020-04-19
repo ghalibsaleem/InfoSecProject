@@ -19,4 +19,3 @@ class SplitData:
 
     list_week1 = []
     list_week2 = []
-    list_week_extra = []

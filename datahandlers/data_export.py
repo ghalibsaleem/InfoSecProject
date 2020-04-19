@@ -1,5 +1,3 @@
-import xlrd as pd
-import os
 
 
 def save_file(root_location, list_data, name):

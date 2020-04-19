@@ -1,7 +1,6 @@
 from datahandlers.datamain import all_data
 import concurrent.futures as futr
 from models.split_data import SplitData
-from models.split_item import SplitItem
 from datetime import timedelta
 from helper.progress_bar import print_progress
 

@@ -14,6 +14,8 @@ def main():
     mark_anomaly()
     print("-------------------------------------------------------------------------------------------------")
     p_relation_list = []
+
+    # This loop handles all the operation with one window in one iteration
     for time_int in time_intervals:
         time_int[1] = create_split(time_int[0])
         if time_int[1] is True:
