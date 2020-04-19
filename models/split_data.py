@@ -10,9 +10,11 @@ class SplitData:
             no = 714
         if interval == 300:
             no = 540
-        self.list_week1 = [SplitItem()] * no
-        self.list_week2 = [SplitItem()] * no
-        self.list_week_extra = [SplitItem()] * no
+        self.list_week1 = [SplitItem() for i in range(no)]
+        self.list_week2 = [SplitItem() for i in range(no)]
+        self.total_windows_count = no
+        self.week1_count = 0
+        self.week2_count = 0
         self.week_start = None
 
     list_week1 = []

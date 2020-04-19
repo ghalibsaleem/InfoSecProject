@@ -2,20 +2,32 @@ from datahandlers.datamain import all_data
 import concurrent.futures as futr
 from models.split_data import SplitData
 from models.split_item import SplitItem
-from datetime import timedelta, datetime
+from datetime import timedelta
+from helper.progress_bar import print_progress
 
 
 def create_split(time_interval):
-    # temp = handle_user_split([0, time_interval])
+    """
+    This perform the split operation according to the time interval for all User.
 
+    Note: This method utilises the multi core parallelization
+    :param time_interval: window time
+    :return:
+    """
+    # temp = handle_user_split([0, time_interval])
+    all_data.list_split_data.clear()
     with futr.ProcessPoolExecutor() as executor:
         args = [(item, time_interval) for item in range(54)]
         results = executor.map(handle_user_split, args)
         count = 0
+        print("Start: Splitting")
+        print_progress(0, 54, prefix='Obj read Progress:', suffix='Completed', bar_length=50)
         for result in results:
-            print(count)
+            # print(count)
             count += 1
             all_data.list_split_data.append(result)
+            print_progress(count, 54, prefix='Splitting Progress:', suffix='Completed', bar_length=50)
+        print("End: Splitting")
 
     print("End of Create Split for time interval " + str(time_interval))
     if len(all_data.list_split_data) > 0:
@@ -25,6 +37,11 @@ def create_split(time_interval):
 
 
 def handle_user_split(args):
+    """
+    This perform split for individual User
+    :param args: Object which contain user index and window time
+    :return: splited data
+    """
     index = args[0]
     interval = args[1]
     if len(all_data.all_user_data[index]) == 0:
@@ -44,6 +61,7 @@ def handle_user_split(args):
             prev_datetime = start_day + timedelta(days=7)
 
         for item in list_to_work:
+            # item = SplitItem()
             if prev_datetime is None:
                 item.sp_time = (all_data.all_user_data[index])[0].rfp
                 item.sp_time = item.sp_time.replace(hour=8, minute=0, second=0, microsecond=0)
@@ -76,21 +94,37 @@ def handle_user_split(args):
 
             duration = 0
             octate = 0
+            ratio = 0
 
             if len(sub_list) > 0:
+                if i == 0:
+                    split_data.week1_count += 1
+                else:
+                    split_data.week2_count += 1
                 for flow_item in sub_list:
-                    if flow_item.rfp + timedelta(seconds=flow_item.duration) > end_date:
+                    """if flow_item.rfp + timedelta(seconds=flow_item.duration) > end_date:
                         extra_dur = end_date.timestamp() - flow_item.rfp.timestamp()
                         duration += extra_dur
                         octate += flow_item.doctate * extra_dur / flow_item.duration
                     else:
                         duration += flow_item.duration
-                        octate += flow_item.doctate
-                if duration != 0:
-                    item.sp_ratio = octate / duration
+                        octate += flow_item.doctate"""
+                    ratio += flow_item.oct_duration
+                """if duration != 0:
+                    item.sp_ratio = octate / duration"""
+                item.sp_ratio = ratio / len(sub_list)
             prev_datetime = item.sp_time
             sub_list.clear()
-
+        """if i == 0:
+            split_data.list_week1 = list_to_work
+        else:
+            split_data.list_week2 = list_to_work"""
         prev_datetime = start_day + timedelta(days=7)
 
     return split_data
+
+
+def mark_anomaly():
+    for item in range(54):
+        if len(all_data.all_user_data[item]) == 0:
+            all_data.anomaly_list.append(item)

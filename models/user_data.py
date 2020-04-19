@@ -4,3 +4,4 @@ class UserData:
         self.is_splitted = False
         self.list_split_data = []
         self.file_list = []
+        self.anomaly_list = []
