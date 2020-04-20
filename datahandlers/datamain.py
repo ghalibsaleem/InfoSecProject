@@ -133,7 +133,7 @@ def excel_operation(file_item):
                 beginning = False
 
     if len(list_data) == 0:
-        print(file_item + " is empty")
+        # print(file_item + " is empty")
         return file_item
     # print("Reading Done : " + file_item)
     return list_data
@@ -162,6 +162,6 @@ def endpoint_date_print(obj_list):
         length = len(item)
         count += 1
         if length > 0:
-            print("User " + str(count) + " -----> Start date : " + str(item[0].rfp) + " and End date : " + str(item[length - 1].rfp) + " TZ:" + str(item[0].rfp.tzinfo))
+            print("User " + str(count) + " File: " + all_data.file_list[count - 1] + " -----> Start date : " + str(item[0].rfp) + " and End date : " + str(item[length - 1].rfp))
         else:
-            print("User " + str(count) + " is empty")
+            print("User " + str(count) + " File: " + all_data.file_list[count - 1] + " is empty")

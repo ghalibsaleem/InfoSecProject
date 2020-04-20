@@ -1,66 +1,81 @@
 /home/ghalibsaleem/Documents/USF/InfoSecProject/venv/bin/python /home/ghalibsaleem/Documents/USF/InfoSecProject/main.py
-jahq76.xlsx is empty
-habc8.xlsx is empty
+************* Start of the program **************
+Start: Reading data from excel
+Excel read Progress: |██████████████████████████████████████████████████| 100.0% Completed
+End: Reading data from excel
 ****************************************************************************
-User 1 -----> Start date : 2013-02-04 15:46:17.511000 and End date : 2013-02-15 16:58:50.953000 TZ:None
-User 2 -----> Start date : 2013-02-04 08:01:47.477000 and End date : 2013-02-15 16:59:57.675000 TZ:None
-User 3 -----> Start date : 2013-02-04 08:05:56.597000 and End date : 2013-02-15 16:57:44.419000 TZ:None
-User 4 -----> Start date : 2013-02-04 11:21:53.655000 and End date : 2013-02-15 16:25:04.213000 TZ:None
-User 5 -----> Start date : 2013-02-04 11:36:41.257000 and End date : 2013-02-15 16:59:09.765000 TZ:None
-User 6 -----> Start date : 2013-02-04 08:46:26.600000 and End date : 2013-02-15 16:26:08.200000 TZ:None
-User 7 -----> Start date : 2013-02-04 11:16:53.052000 and End date : 2013-02-15 16:57:00.180000 TZ:None
-User 8 -----> Start date : 2013-02-04 08:04:36.050000 and End date : 2013-02-15 14:58:41.200000 TZ:None
-User 9 -----> Start date : 2013-02-18 15:16:32.901000 and End date : 2013-02-27 16:56:04.617000 TZ:None
-User 10 -----> Start date : 2013-02-04 15:51:43.715000 and End date : 2013-02-15 16:47:52.921000 TZ:None
-User 11 -----> Start date : 2013-02-04 15:30:15.367000 and End date : 2013-02-15 16:59:54.184000 TZ:None
-User 12 -----> Start date : 2013-02-08 16:12:51.045000 and End date : 2013-02-15 16:25:36.294000 TZ:None
-User 13 -----> Start date : 2013-02-04 08:37:29.638000 and End date : 2013-02-15 16:57:10.311000 TZ:None
-User 14 -----> Start date : 2013-02-04 08:01:08.340000 and End date : 2013-02-15 14:58:09.973000 TZ:None
-User 15 -----> Start date : 2013-02-07 15:03:31.926000 and End date : 2013-02-07 16:00:03.912000 TZ:None
-User 16 -----> Start date : 2013-02-04 10:07:03.477000 and End date : 2013-02-15 14:27:21.174000 TZ:None
-User 17 -----> Start date : 2013-02-04 12:35:07.163000 and End date : 2013-02-15 16:23:28.397000 TZ:None
-User 18 -----> Start date : 2013-02-05 14:02:34.403000 and End date : 2013-02-15 16:48:55.484000 TZ:None
-User 19 is empty
-User 20 -----> Start date : 2013-02-04 14:56:57.767000 and End date : 2013-02-15 16:25:08.287000 TZ:None
-User 21 -----> Start date : 2013-02-04 08:35:09.396000 and End date : 2013-02-15 16:26:04.136000 TZ:None
-User 22 -----> Start date : 2013-02-04 15:47:04.590000 and End date : 2013-02-15 16:42:28.770000 TZ:None
-User 23 -----> Start date : 2013-02-04 08:38:33.959000 and End date : 2013-02-15 16:28:48.853000 TZ:None
-User 24 -----> Start date : 2013-02-04 15:56:56.530000 and End date : 2013-02-15 16:59:59.267000 TZ:None
-User 25 -----> Start date : 2013-02-04 08:25:32.982000 and End date : 2013-02-15 14:53:07.993000 TZ:None
-User 26 -----> Start date : 2013-02-04 08:02:54.089000 and End date : 2013-02-15 16:48:30.960000 TZ:None
-User 27 -----> Start date : 2013-02-04 08:00:01.766000 and End date : 2013-02-15 16:59:54.413000 TZ:None
-User 28 -----> Start date : 2013-02-18 08:27:11.362000 and End date : 2013-02-27 16:33:27.447000 TZ:None
-User 29 -----> Start date : 2013-02-04 10:59:46.236000 and End date : 2013-02-15 13:08:45.630000 TZ:None
-User 30 -----> Start date : 2013-02-04 08:25:16.217000 and End date : 2013-02-08 15:33:37.519000 TZ:None
-User 31 -----> Start date : 2013-02-04 10:08:47.366000 and End date : 2013-02-15 14:54:27.510000 TZ:None
-User 32 -----> Start date : 2013-02-13 15:54:49.452000 and End date : 2013-02-27 16:51:09.270000 TZ:None
-User 33 -----> Start date : 2013-02-04 08:15:14.064000 and End date : 2013-02-15 16:26:32.169000 TZ:None
-User 34 -----> Start date : 2013-02-04 08:06:10.142000 and End date : 2013-02-15 16:59:23.037000 TZ:None
-User 35 -----> Start date : 2013-02-05 08:04:36.446000 and End date : 2013-02-18 16:59:49.326000 TZ:None
-User 36 -----> Start date : 2013-02-04 08:03:31.432000 and End date : 2013-02-15 16:59:27.709000 TZ:None
-User 37 -----> Start date : 2013-02-11 08:54:44.605000 and End date : 2013-02-22 16:59:50.505000 TZ:None
+User 1 File: wgocnc.xlsx -----> Start date : 2013-02-04 10:46:17.511000 and End date : 2013-02-15 16:10:31.620000 TZ:None
+User 2 File: sbpc42.xlsx -----> Start date : 2013-02-04 08:03:18.485000 and End date : 2013-02-15 16:37:16.499000 TZ:None
+User 3 File: rrg3md.xlsx -----> Start date : 2013-02-04 08:09:38.018000 and End date : 2013-02-15 16:58:02.465000 TZ:None
+User 4 File: jrrgxf.xlsx -----> Start date : 2013-02-04 11:34:02.176000 and End date : 2013-02-15 14:29:18.151000 TZ:None
+User 5 File: jmd5h8.xlsx -----> Start date : 2013-02-04 08:07:42.870000 and End date : 2013-02-15 16:58:30.692000 TZ:None
+User 6 File: pecxc9.xlsx -----> Start date : 2013-02-04 09:36:02.548000 and End date : 2013-02-15 14:34:09.232000 TZ:None
+User 7 File: smdvw5.xlsx -----> Start date : 2013-02-04 08:17:48.264000 and End date : 2013-02-15 16:59:56.928000 TZ:None
+User 8 File: mmg9n6.xlsx -----> Start date : 2013-02-04 08:01:47.937000 and End date : 2013-02-15 16:59:17.821000 TZ:None
+User 9 File: mtf7w2.xlsx -----> Start date : 2013-02-18 10:17:38.102000 and End date : 2013-02-28 14:07:49.644000 TZ:None
+User 10 File: kedgm9.xlsx -----> Start date : 2013-02-04 10:51:43.715000 and End date : 2013-02-15 14:42:14.998000 TZ:None
+User 11 File: dlokv6.xlsx -----> Start date : 2013-02-04 10:30:15.367000 and End date : 2013-02-15 15:04:18.050000 TZ:None
+User 12 File: hnldm2.xlsx -----> Start date : 2013-02-08 11:03:55.667000 and End date : 2013-02-15 16:59:55.216000 TZ:None
+User 13 File: dsdxd8.xlsx -----> Start date : 2013-02-04 10:10:09.662000 and End date : 2013-02-15 16:15:33.639000 TZ:None
+User 14 File: wahbf.xlsx -----> Start date : 2013-02-04 08:01:30.625000 and End date : 2013-02-15 16:59:48.911000 TZ:None
+User 15 File: ngtp8b.xlsx -----> Start date : 2013-02-07 10:03:31.926000 and End date : 2013-02-07 11:00:30.807000 TZ:None
+User 16 File: kah89f.xlsx -----> Start date : 2013-02-04 08:48:28.326000 and End date : 2013-02-15 15:17:04.306000 TZ:None
+User 17 File: hmnhx4.xlsx -----> Start date : 2013-02-04 09:02:52.714000 and End date : 2013-02-15 15:51:17.536000 TZ:None
+User 18 File: ajdqnf.xlsx -----> Start date : 2013-02-05 09:02:23.732000 and End date : 2013-02-15 11:48:55.781000 TZ:None
+User 19 File: jahq76.xlsx -----> Start date : 2013-02-28 15:09:41.164000 and End date : 2013-02-28 16:59:55.174000 TZ:None
+User 20 File: elnfhc.xlsx -----> Start date : 2013-02-04 09:56:56.280000 and End date : 2013-02-15 14:29:36.552000 TZ:None
+User 21 File: nm8c7.xlsx -----> Start date : 2013-02-05 08:24:32.373000 and End date : 2013-02-18 16:45:21.571000 TZ:None
+User 22 File: ajb9b3.xlsx -----> Start date : 2013-02-04 10:47:04.590000 and End date : 2013-02-15 14:51:15.567000 TZ:None
+User 23 File: tah5z2.xlsx -----> Start date : 2013-02-04 09:34:16.560000 and End date : 2013-02-15 15:44:21.230000 TZ:None
+User 24 File: zws2p8.xlsx -----> Start date : 2013-02-04 10:56:52.187000 and End date : 2013-02-15 16:59:55.005000 TZ:None
+User 25 File: tjdpzd.xlsx -----> Start date : 2013-02-04 09:00:59.374000 and End date : 2013-02-15 13:41:55.968000 TZ:None
+User 26 File: tcdzb7.xlsx -----> Start date : 2013-02-04 10:11:41.942000 and End date : 2013-02-15 16:57:54.118000 TZ:None
+User 27 File: lpnb79.xlsx -----> Start date : 2013-02-04 08:00:25.406000 and End date : 2013-02-15 16:59:33.647000 TZ:None
+User 28 File: vvmmvd.xlsx -----> Start date : 2013-02-18 12:45:36.202000 and End date : 2013-02-27 14:35:33.144000 TZ:None
+User 29 File: njd5zf.xlsx -----> Start date : 2013-02-04 15:48:33.619000 and End date : 2013-02-15 16:59:40.236000 TZ:None
+User 30 File: cjdk88.xlsx -----> Start date : 2013-02-04 08:02:40.359000 and End date : 2013-02-08 14:55:51.074000 TZ:None
+User 31 File: mjpg95.xlsx -----> Start date : 2013-02-04 08:26:18.665000 and End date : 2013-02-15 16:24:30.889000 TZ:None
+User 32 File: dtqb7d.xlsx -----> Start date : 2013-02-13 10:54:47.565000 and End date : 2013-02-27 16:47:14.810000 TZ:None
+User 33 File: mwwcn6.xlsx -----> Start date : 2013-02-04 11:53:24.857000 and End date : 2013-02-15 15:24:46.113000 TZ:None
+User 34 File: kdcncc.xlsx -----> Start date : 2013-02-04 08:11:21.365000 and End date : 2013-02-15 15:50:13.572000 TZ:None
+User 35 File: jdf5g4.xlsx -----> Start date : 2013-02-04 12:57:31.516000 and End date : 2013-02-15 16:56:13.526000 TZ:None
+User 36 File: jhgn9c.xlsx -----> Start date : 2013-02-04 08:06:47.011000 and End date : 2013-02-15 16:49:49.783000 TZ:None
+User 37 File: kab5zb.xlsx -----> Start date : 2013-02-11 08:00:04.090000 and End date : 2013-02-22 16:09:02.298000 TZ:None
 User 38 is empty
-User 39 -----> Start date : 2013-02-05 16:48:54.480000 and End date : 2013-02-18 16:58:29.226000 TZ:None
-User 40 -----> Start date : 2013-02-04 15:13:18.509000 and End date : 2013-02-15 16:55:46.134000 TZ:None
-User 41 -----> Start date : 2013-02-04 08:00:14.130000 and End date : 2013-02-15 16:58:21.355000 TZ:None
-User 42 -----> Start date : 2013-02-04 13:55:02.381000 and End date : 2013-02-15 14:57:54.752000 TZ:None
-User 43 -----> Start date : 2013-02-13 08:26:29.046000 and End date : 2013-02-27 16:57:01.704000 TZ:None
-User 44 -----> Start date : 2013-02-04 08:00:54.094000 and End date : 2013-02-15 16:59:53.551000 TZ:None
-User 45 -----> Start date : 2013-02-11 10:01:13.022000 and End date : 2013-02-22 13:22:03.666000 TZ:None
-User 46 -----> Start date : 2013-02-04 09:06:03.136000 and End date : 2013-02-15 16:01:15.551000 TZ:None
-User 47 -----> Start date : 2013-02-04 08:28:49.865000 and End date : 2013-02-15 16:57:19.361000 TZ:None
-User 48 -----> Start date : 2013-02-13 11:09:40.954000 and End date : 2013-02-27 14:47:52.036000 TZ:None
-User 49 -----> Start date : 2013-02-04 15:54:38.400000 and End date : 2013-02-13 16:18:42.416000 TZ:None
-User 50 -----> Start date : 2013-02-04 08:02:25.846000 and End date : 2013-02-15 16:25:24.204000 TZ:None
-User 51 -----> Start date : 2013-02-11 08:35:12.694000 and End date : 2013-02-25 14:03:47.722000 TZ:None
-User 52 -----> Start date : 2013-02-04 08:01:04.806000 and End date : 2013-02-15 16:59:26.955000 TZ:None
-User 53 -----> Start date : 2013-02-04 08:00:32.633000 and End date : 2013-02-15 16:25:04.213000 TZ:None
-User 54 -----> Start date : 2013-02-04 09:33:05.378000 and End date : 2013-02-15 16:59:21.118000 TZ:None
-End: copy_data_to_db
+User 39 File: jac345.xlsx -----> Start date : 2013-02-04 14:11:31.945000 and End date : 2013-02-15 14:22:59.985000 TZ:None
+User 40 File: nhm2p3.xlsx -----> Start date : 2013-02-04 10:13:18.509000 and End date : 2013-02-15 15:56:11.121000 TZ:None
+User 41 File: lms8m4.xlsx -----> Start date : 2013-02-04 08:50:43.428000 and End date : 2013-02-15 16:59:55.257000 TZ:None
+User 42 File: jfk535.xlsx -----> Start date : 2013-02-04 08:55:01.192000 and End date : 2013-02-15 14:22:57.609000 TZ:None
+User 43 File: sanfz9.xlsx -----> Start date : 2013-02-12 13:58:10.458000 and End date : 2013-02-27 16:55:58.867000 TZ:None
+User 44 File: jkn7fc.xlsx -----> Start date : 2013-02-04 08:00:16.638000 and End date : 2013-02-15 16:59:56.096000 TZ:None
+User 45 File: jlgwxc.xlsx -----> Start date : 2013-02-11 08:21:36.543000 and End date : 2013-02-22 16:09:19.022000 TZ:None
+User 46 File: oro26b.xlsx -----> Start date : 2013-02-04 14:54:26.281000 and End date : 2013-02-15 14:03:37.770000 TZ:None
+User 47 File: bay6g7.xlsx -----> Start date : 2013-02-04 08:12:52.565000 and End date : 2013-02-15 16:56:08.651000 TZ:None
+User 48 File: tlgdq9.xlsx -----> Start date : 2013-02-12 14:00:16.960000 and End date : 2013-02-27 15:23:00.105000 TZ:None
+User 49 File: pt7td.xlsx -----> Start date : 2013-02-04 10:54:38.205000 and End date : 2013-02-13 11:18:42.416000 TZ:None
+User 50 File: amsh7c.xlsx -----> Start date : 2013-02-04 08:06:22.210000 and End date : 2013-02-15 16:59:58.883000 TZ:None
+User 51 File: ctkbn4.xlsx -----> Start date : 2013-02-11 08:24:02.108000 and End date : 2013-02-25 16:50:56.397000 TZ:None
+User 52 File: hemmb2.xlsx -----> Start date : 2013-02-04 08:32:06.216000 and End date : 2013-02-15 16:44:09.665000 TZ:None
+User 53 File: jlkm94.xlsx -----> Start date : 2013-02-04 11:15:00.826000 and End date : 2013-02-15 16:52:08.594000 TZ:None
+User 54 File: krh5f5.xlsx -----> Start date : 2013-02-04 09:06:05.618000 and End date : 2013-02-15 16:58:45.588000 TZ:None
+Start: copy_data_to_obj
+End: copy_data_to_obj
 -------------------------------------------------------------------------------------------------
+Start: Splitting
+Splitting Progress: |██████████████████████████████████████████████████| 100.0% Completed
+End: Splitting
 End of Create Split for time interval 10
+Done processing for Interval : 10
+Start: Splitting
+Splitting Progress: |██████████████████████████████████████████████████| 100.0% Completed
+End: Splitting
 End of Create Split for time interval 227
+Done processing for Interval : 227
+Start: Splitting
+Splitting Progress: |██████████████████████████████████████████████████| 100.0% Completed
+End: Splitting
 End of Create Split for time interval 300
+Done processing for Interval : 300
 ************* End of the program **************
 
 Process finished with exit code 0
