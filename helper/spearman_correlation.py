@@ -25,7 +25,7 @@ def calculate_spearman():
                     list_item.append(None)
                     continue
                 result_same = spearmanr(user1_week1, user1_week2)
-                list_item.append([1, result_same.correlation.__float__()])
+                list_item.append([result_same.correlation.__float__(), 1])
             else:
                 user2_week2 = [x.sp_ratio for x in all_data.list_split_data[inner_index].list_week2]
                 if all_data.list_split_data[inner_index].week2_count == 0:
