@@ -101,23 +101,10 @@ def handle_user_split(args):
                 else:
                     split_data.week2_count += 1
                 for flow_item in sub_list:
-                    """if flow_item.rfp + timedelta(seconds=flow_item.duration) > end_date:
-                        extra_dur = end_date.timestamp() - flow_item.rfp.timestamp()
-                        duration += extra_dur
-                        octate += flow_item.doctate * extra_dur / flow_item.duration
-                    else:
-                        duration += flow_item.duration
-                        octate += flow_item.doctate"""
                     ratio += flow_item.oct_duration
-                """if duration != 0:
-                    item.sp_ratio = octate / duration"""
                 item.sp_ratio = ratio / len(sub_list)
             prev_datetime = item.sp_time
             sub_list.clear()
-        """if i == 0:
-            split_data.list_week1 = list_to_work
-        else:
-            split_data.list_week2 = list_to_work"""
         prev_datetime = start_day + timedelta(days=7)
 
     return split_data
