@@ -26,7 +26,7 @@ def z_functions(relation):
 
             if relation_line[outer_index][1] == 1:
                 relation_line[outer_index][1] = 0.99
-            z_1a_2a = (math.log10((1 + relation_line[outer_index][1])/(1 - relation_line[outer_index][1]))) / 2
+            z_1a_2a = (math.log10((1 + relation_line[outer_index][0])/(1 - relation_line[outer_index][0]))) / 2
 
             if (relation_line[inner_index])[0] == 1:
                 (relation_line[inner_index])[0] = 0.99
