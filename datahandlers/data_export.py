@@ -12,6 +12,6 @@ def save_file(root_location, list_data, name, initials):
             str_data += list_data[0][count] + ","
             count += 1
 
-    with open(root_location + "/output/" + initials + str(name) + ".xlsx", "w") as all_data_file:
+    with open(root_location + "/output/" + initials + str(name) + ".csv", "w") as all_data_file:
         all_data_file.write(str_data)
 
