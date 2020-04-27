@@ -142,8 +142,8 @@ def distinguishable(p_array):
                 temp_row.append("None")
             else:
                 if float(itemCol) <= 0.05:
-                    temp_row.append("Distinguishable")
+                    temp_row.append("Yes")
                 else:
-                    temp_row.append("Indistinguishable")
+                    temp_row.append("No")
         dist_arr.append(temp_row)
     return dist_arr
