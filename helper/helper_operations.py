@@ -127,3 +127,23 @@ def mark_anomaly():
     for item in range(54):
         if len(all_data.all_user_data[item]) == 0:
             all_data.anomaly_list.append(item)
+
+
+def distinguishable(p_array):
+    dist_arr = []
+    for itemRow in p_array:
+        temp_row = []
+        if p_array.index(itemRow) == 0:
+            dist_arr.append(itemRow)
+            continue
+        for itemCol in itemRow:
+
+            if itemCol is None or temp_row == "None":
+                temp_row.append("None")
+            else:
+                if float(itemCol) <= 0.05:
+                    temp_row.append("Distinguishable")
+                else:
+                    temp_row.append("Indistinguishable")
+        dist_arr.append(temp_row)
+    return dist_arr

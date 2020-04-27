@@ -1,7 +1,7 @@
 import os
 from datahandlers.datamain import copy_data_to_obj
 from datahandlers.data_export import save_file
-from helper.helper_operations import create_split, mark_anomaly
+from helper.helper_operations import create_split, mark_anomaly, distinguishable
 from helper.spearman_correlation import calculate_spearman
 from helper.calc_funtions import z_functions, p_functions
 
@@ -22,7 +22,9 @@ def main():
             relation = calculate_spearman()
             z_array = z_functions(relation)
             p_array = p_functions(z_array)
-            save_file(os.curdir, p_array, time_int[0])
+            dist_data = distinguishable(p_array)
+            save_file(os.curdir, p_array, time_int[0], 'PValue_')
+            save_file(os.curdir, dist_data, time_int[0], 'Distinguishable_')
             p_relation_list.append(p_array)
         print("Done processing for Interval : " + str(time_int[0]))
     print("************* End of the program **************")
