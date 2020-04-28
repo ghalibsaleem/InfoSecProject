@@ -24,14 +24,14 @@ Assignment01             // Root Folder
 │   ├── progress_bar.py   
 │   └── spearman_correlation.py  
 ├── input              
-│   └── *.xlxs  
+│   └── *.xlsx  
 ├── models              
 │   ├── split_data.py   
 │   ├── split_item.py  
 │   ├── user_data.py   
 │   └── user_info.py 
 ├── output                
-│   └── *.xlxs    
+│   └── *.csv    
 ├── saved_obj                
 │   └── *.obj 
 │── main.py              // Main File
