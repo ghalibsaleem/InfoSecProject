@@ -43,7 +43,7 @@ Assignment01             // Root Folder
 The project takes two types of input:
 
 1) saved_obj/*.obj 
-2) input/*.xlxs 
+2) input/*.xlsx 
 ```
 NOTE: The above mention input is required to run the script. It gives error if not provided. When the program is executed for very first time. It will read the excel files and save the object files. So in next execution it will read information from ibj files instead of excel files.   
 ```
