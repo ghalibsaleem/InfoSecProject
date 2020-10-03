@@ -1,8 +1,8 @@
-### Final Programming Assignment - Profiling Internet Users ###
+### Profiling Internet Users ###
 
 #### Contributors ####
 
-1) Ghalib Saleem : U03151409
+1) Ghalib Saleem 
 
 The source of data for this project is Cisco NetFlow version 5, which is one of the most popular technologies to collect IP traffic. Many parameters can be extracted from the source data including; Packets, Octets, beginning and ending of each flow, source and destination port numbers, source and destination IP addresses and many other variables which are included in the following figure.
 To preserve the privacy, all the IP addresses are removed from the data. 54 Excel files are included in the project which each file corresponds to one user. Data is captured for a month long period. In average, the number of flows for each subject over a week worth of data is more than 7000.
